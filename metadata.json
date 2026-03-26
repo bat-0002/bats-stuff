@@ -1,0 +1,10 @@
+{
+    "id": "bstuff",
+    "name": "Bat's Stuff",
+    "author": ["Bat"],
+    "description": "I just add ideas i have lol",
+    "prefix": "bstuff",
+    "main_file": "main.lua",
+    "version": "1.0.0",
+    "dependencies": ["Steamodded"]
+}
