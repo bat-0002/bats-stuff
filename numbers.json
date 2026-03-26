@@ -1,0 +1,10 @@
+{
+    "id": "numbat",
+    "name": "Numbers",
+    "author": ["Bat"],
+    "description": "This mod adds number decks",
+    "prefix": "numbat",
+    "main_file": "main.lua",
+    "version": "1.0.0",
+    "dependencies": ["Steamodded"]
+}
