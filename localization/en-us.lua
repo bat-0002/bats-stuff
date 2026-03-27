@@ -4,9 +4,10 @@ return {
             b_bstuff_none = {
                 name = "None Deck",
                 text = {
-                    "Applies the",
-                    "downsides of",
-                    "every deck",
+                    "Applies most {C:red}negative{}",
+                    "{C:red}effects{} of each deck, most",
+                    "{C:green}positive effects{} become",
+                    "{C:red}negative effects{}",
                 },
             }
         }
