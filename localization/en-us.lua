@@ -9,10 +9,10 @@ return {
                     "most {C:green}positive effects{}",
                     "become {C:red}negative effects{}",
                 },
-            }
+            },
         },
-        CardSleeves = {
-            sleeve_bstuffs_none = {
+        Sleeve = {
+            sleeve_bstuff_snone = {
                 name = "None Sleeve",
                 text = {
                     "Applies most {C:red}negative{}",
