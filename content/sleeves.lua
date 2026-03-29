@@ -6,7 +6,7 @@ if CardSleeves then
         config = {
             discards = -1,
             hands = -2,
-            extra_hand_bonus = -2,
+            extra_hand_bonus = -1,
             extra_discard_bonus = -1,
             no_interest = true,
             consumable_slot = -2,
