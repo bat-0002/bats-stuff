@@ -5,15 +5,14 @@ if CardSleeves then
         pos = { x = 0, y = 0 },
         loc_vars = function(self)
             local key, vars
-            if self.get_current_deck_key() == "btuff_b_none" then
+            if self.get_current_deck_key() == "b_bstuff_none" then
                 key = self.key .. "_alt"
                 self.config = {
                     discards = -3, -- red, blue, black deck
                     hands = -2, -- red, blue deck
                     joker_slot = -2, -- -- black, painted deck
-                    selection_size = -1, -- painted deck
                 }
-                vars = { self.config.discards, self.config.hands, self.config.joker_slot, self.config.selection_size }
+                vars = { self.config.discards, self.config.hands, self.config.joker_slot }
             else
                 key = self.key
                 self.config = {
@@ -26,7 +25,7 @@ if CardSleeves then
                     joker_slot = -2, -- black, painted deck
                     vouchers = { 'v_magic_trick' } -- zodiac, magic, nebula deck
                 }
-                vars = { self.config.discards, self.config.hands, self.config.exrea_hand_bonus, self.config.extra_discard_bonus, self.config.no_interest, self.config.consumable_slot, self.config.joker_slot, self.config.vouchers }
+                vars = { self.config.discards, self.config.hands, self.config.extra_hand_bonus, self.config.extra_discard_bonus, self.config.no_interest, self.config.consumable_slot, self.config.joker_slot, self.config.vouchers }
             end
             return { key = key, vars = vars }
         end,

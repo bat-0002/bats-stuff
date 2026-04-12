@@ -22,7 +22,12 @@ return {
         Sleeve = {
             sleeve_bstuff_snone = {
                 name = "None Sleeve",
-                text = G.localization.descriptions.Back["b_bstuff_none"].text
+                text = {
+                    "Applies most {C:red}negative{}",
+                    "{C:red}effects{} of each {C:blue}vanilla{} deck",
+                    "most {C:green}positive effects{}",
+                    "become {C:red}negative effects{}",
+                },
             },
             sleeve_bstuff_snone_alt = {
                 name = "None Sleeve",
