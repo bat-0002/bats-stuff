@@ -3,7 +3,7 @@ SMODS.Joker {
     key = "fake_bloodstone",
     unlocked = false,
     blueprint_compat = true,
-    rarity = 2,
+    rarity = 1,
     cost = 7,
     atlas = "jokers",
     pos = { x = 0, y = 0 },
