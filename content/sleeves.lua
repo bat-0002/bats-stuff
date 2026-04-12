@@ -3,16 +3,33 @@ if CardSleeves then
         key = "snone",
         atlas = "sleeves",
         pos = { x = 0, y = 0 },
-        config = {
-            discards = -1,
-            hands = -2,
-            extra_hand_bonus = 0,
-            extra_discard_bonus = -1,
-            no_interest = true,
-            consumable_slot = -2,
-            joker_slot = -2,
-            vouchers = { 'v_magic_trick' }
-        },
+        loc_vars = function(self)
+            local key, vars
+            if self.get_current_deck_key() == "btuff_b_none" then
+                key = self.key .. "_alt"
+                self.config = {
+                    discards = -3, -- red, blue, black deck
+                    hands = -2, -- red, blue deck
+                    joker_slot = -2, -- -- black, painted deck
+                    selection_size = -1, -- painted deck
+                }
+                vars = { self.config.discards, self.config.hands, self.config.joker_slot, self.config.selection_size }
+            else
+                key = self.key
+                self.config = {
+                    discards = -1, -- red deck
+                    hands = -2, -- blue, black deck
+                    extra_hand_bonus = 0, -- green deck
+                    extra_discard_bonus = -1, -- green deck
+                    no_interest = true, -- green deck
+                    consumable_slot = -2, -- nebula, magic deck
+                    joker_slot = -2, -- black, painted deck
+                    vouchers = { 'v_magic_trick' } -- zodiac, magic, nebula deck
+                }
+                vars = { self.config.discards, self.config.hands, self.config.exrea_hand_bonus, self.config.extra_discard_bonus, self.config.no_interest, self.config.consumable_slot, self.config.joker_slot, self.config.vouchers }
+            end
+            return { key = key, vars = vars }
+        end,
     }
     --[[
     CardSleeves.Sleeve {
