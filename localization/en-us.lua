@@ -74,7 +74,60 @@ return {
                     "cards with {E:1,C:attention}#2#",
                     "suit in your deck",
                 },
+            },
+            j_bstuff_rlly_short = {
+                name = "Really Short Joker",
+                text = {
+                    "{C:red}+#1#{} Mult",
+                    "{s:0.6}{C:inactive}haha very short{}{}"
+                }
+            },
+            j_bstuff_short = {
+                name = "Short Joker",
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult",
+                    "{s:0.6}{C:inactive}haha short{}{}"
+                }
             }
-        }
+        },
+        Stake = {
+            stake_bstuff_eternal = {
+                name = "Eternal Stake",
+                text = {
+                    "Shop can have {C:attention}Eternal{} Jokers",
+                    "{C:inactive,s:0.8}(Can't be sold or destroyed)",
+                    "{s:0.8}No additional stakes applied",
+                },
+            },
+            stake_bstuff_perish = {
+                name = "Perishable Stake",
+                text = {
+                    "Shop can have {C:attention}Perishable{} Jokers",
+                    "{C:inactive,s:0.8}(Debuffed after 5 Rounds)",
+                    "{s:0.8}No additional stakes applied",
+                },
+            },
+            stake_bstuff_rental = {
+                name = "Rental Stake",
+                text = {
+                    "Shop can have {C:attention}Rental{} Jokers",
+                    "{C:inactive,s:0.8}(Costs {C:money,s:0.8}$3{C:inactive,s:0.8} per round)",
+                    "{s:0.8}No additional stakes applied",
+                },
+            },
+        },
+        --[[
+        poker_hand_descriptions = {
+            ['bstuff_Nice'] = {
+                "A hand containing a 6 and a 9, nice!"
+            },
+            ['bstuff_Bruh'] = {
+                "A hand containing a 6 and a 7"
+            },
+        },
+        poker_hands = {
+            ['bstuff_Nice'] = "Nice",
+            ['bstuff_Bruh'] = "Bruh",
+        }, ]]
     }
 }

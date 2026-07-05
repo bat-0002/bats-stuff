@@ -26,3 +26,10 @@ SMODS.Atlas {
     px = 71,
     py = 95,
 }
+-- plus stakes
+SMODS.Atlas {
+    key = "plus_stakes",
+    path = "plus_stakes.png",
+    px = 29,
+    py = 29,
+}
