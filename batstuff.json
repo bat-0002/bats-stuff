@@ -6,6 +6,6 @@
     "prefix": "bstuff",
     "main_file": "batstuff.lua",
     "badge_colour": "6326b0",
-    "version": "0.1.0", 
+    "version": "0.1.1", 
     "dependencies": ["Steamodded", "Lovely"]
 }
